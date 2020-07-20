@@ -1,0 +1,37 @@
+To create a table in html we have the table tag:
+SYNTAX :
+<table>
+<tr>
+  <td></td>
+</tr>
+</table>
+
+Here the tr stands for table row it creates the row for the table and td stands for the table columns.To add border to the table we have a special attribute border
+SYNTAX :
+<table border="1"></table>  <!-- this will create a table border of 1 pixel-->
+
+
+To create a table header we have th attributes in the table tag itself:
+SYNTAX :
+<table>
+<tr>
+  <th></th>
+</tr>
+</table>
+
+
+There can sometimes circumstances may arrive that we need to add one entire row for a single notation, hence we have a "colspan" attribute under the table tag.This attribute
+makes a special table row for mentioning the caption in the table ; such as "STUDENTS DETAILS".
+SYNTAX :
+<table>
+<tr>
+  <th colspan="3">TEXT_PIECE</th>   <!--this will leave a three column span or space on the topmost table row.-->
+</tr>
+</table>
+
+
+To set the width of the table as our own preference:
+SYNTAX :
+<table border="1" width="500"></table>   <!-- this will create a table of width as per screen resolution of 500 pixels.-->
+
+We can either mention the percentage of the webpage screen ; i.e.,100%, so this will make the table 100% visible to the user whatever may be the size of the browser window.

@@ -1,0 +1,17 @@
+body {
+	text-align: center;
+}
+
+.searchtab select{
+	margin: auto;
+	text-align: center;
+    width: 491px;
+    height:52px; 	
+}
+
+.padding {
+	padding-bottom: 33px;
+	width: 635px;
+	height: 510px;
+}
+

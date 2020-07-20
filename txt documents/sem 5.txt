@@ -1,0 +1,153 @@
+TCS (Theory of computer science) sem 5 important topics to study as per exams:
+SECTION 1 -
+
+Q1.) Halting problem and Rise theorem {5-10 marks}
+Q2.) Shortnote : Closure property, Post Correspondence problem
+Q3.) Mealy, Moore and Turing machine (shortnote)
+Q4.) Numerical on PDA
+Q5.) Normal Grammar to Chomsky Normal Form {10 marks}
+
+SECTION 2 -
+
+Q1.) Numerical on finite automata
+Q2.) Numerical on regular expression
+Q3.) Design finite automata
+Q4.) Pumping lema, Prove language is not regular
+Q5.) Numerical of decider and accepter for CFG
+
+SECTION 3 -
+Q1.) Numerical for leftmost and right most Derivation {5-10 marks}
+Q2.) Convert CFG to NFG
+Q3.) Convert NFA to DFA
+Q4.) Numerical for pumping lema
+Q5.) Equivalence for NFA {5-10 marks}
+
+ note* : do one question by refering the solution given and rest do it on your own.
+
+
+SECTION 4 -
+
+Q1.) Differeiate between PDA and NPDA
+Q2.) Differeiate between DFA and NFA
+Q3.) Application of regular expression
+Q4.) Recursive and Recursively innumerable languages
+Q5.) Types of turing machine and checking the well formedness of parenthesis
+
+
+CN (Computer Networks) sem 5 important topics to study as per exams:
+SECTION 1 -
+
+Q1.) IPV4 {5-10 marks}
+Q2.) Explain different framing methods and mention the advantage of variable length frame over fixed layer frame {5-10 marks}
+Q3.) Congestion control ; Leaky Bucket,Token Bucket Algorithm
+Q4.) Explain how collisions are handeled in CSMA/CD Protocol (Theory question)
+Q5.) Distance vector routing protocol {5-10 marks}
+
+SECTION 2 - 
+
+Q1.) Shortnotes on - ARP, RARP, ICMP, SMTP, DISTANCE VECTOR ROUTING ALGORITHM,      
+INTER-NETWORKING DEVICES    Q1 OR Q6 {5 MARKS EACH} for arp,rarp and icmp draw diagram and then explain
+Q2.) What is topology, different types of topology and advantages and disadvantages.   
+Q3.) Traffic shaping explain leaky bucket algo. compare it with token bucket algo. (after congestion control start this question)
+Q4.) ICMP in detail (Header format and explain)
+Q5.) Program for client side server using socket programming i.e;UDP
+
+SECTION 3 - 
+
+Q1.) Openloop Conjection and Closeloop Conjection
+Q2.) TCP timer,header (with neat labelled diagram with explanation)
+Q3.) Conjection oriented and connectionless services (Difference between)
+Q4.) Different Framing methods
+Q5.) Explain different subnet masks and subnetting. {5-10 marks}
+
+SECTION 4 - 
+
+Q1.) Fiber optics as a communication medium advantages draw iso and osi model(7 layers)
+Q2.) Relation between protocol interface and services
+Q3.) Repeter,Bridge,Hub,Gateways (Explain better if done with diagrams) {5 marks}
+Q4.) Transmission protocol
+Q5.) Classify transmission media and compare it
+
+
+DBMS (Database Management System) sem 5 important topics to study as per exams:
+SECTION 1 - 
+
+Q1.) SQL Query (Qustion will be given we have to write the query for      
+that table) 
+Q2.) Architecture of DBMS in detail (Diagram needed)
+Q3.) Deadlock-avoidance,pevention and recovery techniques 
+Q4.) Specializationn and generalization
+Q5.) Normalization 1NF, 2NF etc with tables
+
+SECTION 2 - 
+
+Q1.) Explain the following Relational algebra
+Q2.) ER diagram to relational model
+Q3.) Complex query
+Q4.) File system and database system
+Q5.)Acid transaction
+
+SECTION 3 -
+
+Q1.) Shortnotes on - log based recovery mechanism, constraints in sql,      
+specialization and generalization, Triggers and transaction control commands, 
+conflict and view seriability, Data independencies {5-10 marks}
+Q2.) DBA
+Q3.) Processing systems vs database management system
+Q4.) Components of ER model
+Q5.) Database languages
+
+SECTION 4 - 
+
+Q1.) Referential integrity
+Q2.) Map ER,EER model to relational model
+Q3.) Short notes on - Natural intersection, Set intersection, Weak entity, 
+Foreign key  {5-10 marks}
+
+
+MP (Microprocessors) sem 5 important topics to study as per exams:
+SECTION 1 -
+
+Q1.) Minimum and Maximum mode,Numerical {5-10 marks}
+Q2.) For maximum mode of 8086 exlain memory read and write with timing diagram
+Q3.) Addresssing mode for 8086
+Q4.) Procedure and macro {5-10 marks} (Difference between)
+Q5.) Explain an instruction issue algorithm for pentium processor  {10 marks}
+
+SECTION 2 -
+
+Q1.) Shortnotes on mixed language programming {10 marks}
+Q2.) Explain maximum mode configuration of 8086 microprocessor {10 marks}
+Q3.) Explain the branch prediction logic used in pentium processor {10 marks}
+Q4.) Explain the block diagram of 8257 DMM controller {5-10 marks}
+Q5.) Explain the modes of operation of 8036 processor
+
+SECTION 3 -
+
+Q1.) Procedure and macro.Also write the program to find the factorial of a number using procedure 
+Q2.) Interrupt structure of 8086 microprocessor {10 marks}
+Q3.) Segmentation of 8086 (only advantages-5 marks only interrup-5 marks and both clubbed 10-marks)
+Q4.) Addressing mode of 8086 {5-10 marks}
+Q5.) Flag register for 8086 {5-10 marks}
+
+SECTION 4 -
+
+Q1.) Draw and explain memory read machine cycle with timing diagram for minimum mode 
+Q2.) Minimum and Maximum mode of 8086 processor (These are two different questions) {5-10 marks}
+Q3.) Operation of 8059 in cascade mode {5-10 marks}
+Q4.) Shortnotes - Interrupts, Modes of 8253 programmable interval timer {5-10 marks}
+Q5.) Real mode, protected mode, virtual mode of 8086 microprocessor {5-10 marks}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

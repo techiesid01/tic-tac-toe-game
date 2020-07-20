@@ -1,0 +1,30 @@
+PYTHON ARRAY IN NUMPY :
+
+there are six ways of creating array in numpy
+they are as follows 
+array()- it is mostly used method of creating an array in numpy ass well as in general
+linspace()- it makes several numbers of parts of the range it takes parameter in three differnt parts in the brackets the start,the end 
+ 		and number of parts in which it has to be divided.
+logspace()- it creates the array by dividing them into number of there parts it also takes three different parameters the start,the 
+		and the number of parts in which the array is to be divided it does the logarithm of each value in the mentioned 
+		range of elements
+arange()- here also we have a range of elemnts to be printed it also takes parameters in three different parts the start,the end and
+  		the number of elemnts it should skip.
+zeroes()- it is a method used to cr4eate an array with only zeroes here the parameter is passed as how many
+		 zeroes to be printed in the array
+ones()- it is a method used to cr4eate an array with only ones here the parameter is passed as how many
+		 ones to be printed in the array
+
+
+
+matrix in numpy (two dimensional array)
+SYNTAX:- arr = array([
+			[1,2,3]
+			[4,5,6]
+                     ])
+now we can prerform certain predefined functions on these 2-dimensional array.they are as follows::---
+arr.ndim()- this will give the dimension of the array it returns an integer value
+arr.shape()- this will give the number of rows and columns of the matrix
+arr.dtype()- this will give the datatype of the elements of the array
+arr.size()- this function returns the number of elemnts in the array
+arr.flatten()- this will flatten or shrink the 2-d array into a 1-d array

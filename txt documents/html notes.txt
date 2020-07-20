@@ -1,0 +1,1124 @@
+HTML(Hyper Text Marku Language) Notes 
+
+BASIC SYNTAX OF EVERY HTML CODE :
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+</body>
+</html>
+
+Every HTML program starts with the same syntax . It is important to  note that the each tag in html is needed to be ended . It ends with same name as the tagname 
+with a forward slash in the beginning .
+The head includes title to be mentioned for the project . The body includes the paragraph which is shown on the webpage,the paragraph is denoted by the paragraph tag "<p>" . 
+To make the words in the paragraph bold <strong> command can be used also to make a word font to italics we can use the <em> tag . To underline a word in a html paragraph,we need to
+use the <u> tag .  
+There are some html tags that have only opening tags and not any closing tags .
+
+ 
+To add images in the screen we use the img tag:
+SYNTAX :
+<img src="img_name.ext"> ......... THE img tag need not to be stopped
+
+
+To add link we have the a tag:
+SYNTAX :
+<a href="http://www.site_name.com" target="_blank"> ......... this makes the link to open in the new tab.
+
+To add a mail link we have to just use the same anchor(a) tags:
+SYNTAX :
+<a href="mailto:shivamsingh0100@gmail.com"></a>
+
+To resize the image we have special img attribute:
+SYNTAX :
+<img src="img_name.ext" height="150">  <!--this will shrink the size of the image to 150 pixels.-->
+
+    
+To create a table in html we have the table tag:
+SYNTAX :
+<table>
+<tr>
+  <td></td>
+</tr>
+</table>
+
+Here the tr stands for table row it creates the row for the table and td stands for the table columns.To add border to the table we have a special attribute border
+SYNTAX :
+<table border="1"></table>  <!-- this will create a table border of 1 pixel-->
+
+
+To create a table header we have th attributes in the table tag itself:
+SYNTAX :
+<table>
+<tr>
+  <th></th>
+</tr>
+</table>
+
+
+There can sometimes circumstances may arrive that we need to add one entire row for a single notation, hence we have a "colspan" attribute under the table tag.This attribute
+makes a special table row for mentioning the caption in the table ; such as "STUDENTS DETAILS".
+SYNTAX :
+<table>
+<tr>
+  <th colspan="3">TEXT_PIECE</th>   <!--this will leave a three column span or space on the topmost table row.-->
+</tr>
+</table>
+
+
+To set the width of the table as our own preference:
+SYNTAX :
+<table border="1" width="500"></table>   <!-- this will create a table of width as per screen resolution of 500 pixels.-->
+
+We can either mention the percentage of the webpage screen ; i.e.,100%, so this will make the table 100% visible to the user whatever may be the size of the browser window.
+
+Sometimes we need to give enough space in each block of our table ,so this can also be utilized by the special attributes called "cellpadding" and "cellspacing".
+cellpadding makes each text in each of the blocks very visible and free to look at,it takes some space for all the boundaries of the text.
+cellspacing is nothing but an special attribute that provides us little bit more thicker border.
+NOTE : these both attributes takes pixels values to complete their tasks..
+
+In html we can create lists as well ; so to create a list we have two different tags.
+Basically , we can distinguishes lists into two different categories : 1.) un-ordered lists
+							               2.) ordered lists
+SYNTAX(Un-ordered list) :
+<ul>
+  <li></li>
+</ul>
+
+SYNTAX(Ordered list) :
+<ol>
+  <li></li>
+</ol>
+
+
+
+
+  				*******************END OF HTML NOTES*********************
+
+
+
+
+
+
+
+
+CSS(Cascading Style Sheets) Notes 
+
+SYNTAX :
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"></style>
+
+</head>
+
+<body>
+
+</body>
+</html>
+
+To change the font and colour in css we have two attributes , they are the "color" and the "font-family" attributes.
+SYNTAX :
+<style> tag_name{color:color_name;font-family:font_name;}
+</style>
+NOTE : we have to use that tag_name to change the properties in which we have the text to be changed.
+
+
+We can also use the RGB code to change the color of our text as well.
+There arises a condition where we need to change the lineheight to make the paragraphs more readable,so we have got the line-height attribute for that purpose.
+The lineheight attribute takes the percentage of the line height.
+We can also change the font weight as well as the font style by using css.It is way better than using the html tags.
+SYNTAX :
+<style> tag_name{font-weight:bold;font-style:italics;}
+</style>
+
+So here in css we can also maintain the alignment as well as the indentations of lines to make them look legible to read.
+The attributes for both the tasks are : "text-align","text-indent" .
+The text alignment attribute takes the justified text and the text indent attribute takes the number of pxels to be left for the indentations.
+
+For instance :
+text-align:center;
+text-indent:25px; 
+
+
+Some of the cool features of css are changing the back-ground as well as the text colors in the website.This can make your website look attractive to read and visit.
+SYNTAX :
+inside the style tags
+body{
+   background-color:skyblue;    <!-- this will turn the background colour to skyblue color -->
+   color:white;            	<!-- this will turn the written text into white colour which will make the text easily readable-->
+}
+
+
+Here in css we can add some cool images in the background to make your webpage look pretty cool to look at it.
+SYNTAX :
+inside the style tags
+body{
+   background-image:url(img_name.ext);  
+   background-repeat:no-repeat;
+   background-position:10px 60px;  this attribute takes two values, the the distance from the right edge the distance from the top edge 
+}
+
+We can also repeat the background image in horizontal as well as in the vertical direction,
+For instance:
+background-repeat:repeat-x;    repeats the image in the horizontal manner.
+background-repeat:repeat-y;    repeats the image in the vertical manner.
+
+We can also set the position of the image on the webpage as per our own choice,
+For instance:
+background-position:50% 60px;    we can also use the percentage division the screen for plotting the image.
+				 50% mans the screen will be divided into parts that is from left and right edges there will be atmost 50-50 % area on the both sides.
+
+
+Sometimes we nedd to give something highlighted on our webpage,so this is where the padding concept comes into the picture,
+Now a question might arise that,....what the heck padding means ?
+So basically....padding is the space surronding the text from all the four boundaries when the text is highlighted singly with some damn background color.
+For instance:
+inside the style tags
+tag_name {background-color:yellow;padding:10px;}
+
+We can even change the padding from each edge of the border,
+SYNTAX :
+padding-top:10px;
+padding-bottom:20px;
+
+So we will just see the padding at the top and the bottom of the background border for that line of text.
+
+
+We can also make border by using css,the border basically consists of three various attributes ,the border color,the border width,the border style.
+SYNTAX :
+inside the style tags
+tag_name {background-color:yellow;padding:10px;border-color:red;border-width:3px;border-style:dotted;}
+
+
+If someone wants to change the top color of the border,one can easily do that by style tag attributes;
+For instance:
+border-top-color:green;      <!-- this will make the top edge of the border green in color,rest of the edge will not have any kind of border-->
+
+NOTE : The border can be used in a singel line by  setting all the three properties in one command .
+For instance:
+border:3px solid black
+## this will make a solid border of black color of width 3px.##
+
+There can sometimes arises a condition where we need to add the margins to seperate the paragraphs and make tehm more readable by highlighting it.
+This can be achieved by using the margin attribute in the style tag.
+For instance:
+margin:2px;  <!-- this will create the margin of size of 2 pixels between each line of the paragraph.
+
+NOTE : The margin attribute is mostly used for the paragraphs in html.
+
+These features are under the CSS Box Model.
+
+Now suppose we made a header and set the background color for that header and we want to change the padding width and height ,so this can be achieved by adding the width and height 
+attribute in the style tag.
+For instance:
+tag_name {background-color:red;color:white;width:300px;height:100px;}
+
+
+
+Styling the link in css:
+We can actually adjust the design and look to our links which are mentioned in the webpage.
+To access the decoration to link ,we have certain attributes in the style tag:
+SYNTAX :
+inside the style tag
+a:link{color:red;text-decoration:none;}   <!-- this will change my text of the link to red in color and remove the underline-->
+
+We can also change the color of the visited links by;
+a:visited{color:green;}
+
+We can also make changes to the hovering of the link accessible by the user like whenever we move through the link we can also change the background and text decoration as well as 
+the font size and font color of the text.
+a:hover{
+  background-color:blue;
+  color:white;text-decoration:underline;font-weight:bold;
+}
+
+Now we can also change the color of the background to a different color while cliking on the link,
+a:active{background-color:orange;}
+
+
+
+Styling the table in css:
+We can add a colourfull border to the table using css;
+SYNTAX :
+inside the style tags
+table {border:3px solid black;}
+We can also change the properties of each row ,column as well as the table headers.
+For instance:
+<style type="text/css">
+		table {border:3px solid black;}
+		tr {background-color: lightgreen;}
+		th {background-color: orange;}
+		td {border:3px dashed yellow;}
+	</style>
+
+So in css we can actually play with lists as well .We have got a very cool feature to decorate our lists on our webpage to make it look attractive.
+We can actually change the bullets mark in unorddered list using some cool css attributes.
+To change the bulletin we have to do this:
+ul {list-style-type:square;}    <!-- this will make the bulletin to square shape.-->
+
+Now suppose we see that these bulletins look cringy and boring so we hae all the reserved rights to make our own bulletin by adding certain images as bullets:
+ul {list-style-image:url(img_name.ext);}
+
+
+We can also add the formatting to only small piece of a text by using span tag in css
+Just we have to surround the piece of text with this tag and have to add the styling on this span tag itself,this will change the formatt of only that text and the rest will remain
+unchanged.
+
+There is a div tag which comes under the body ,  the div tag basically means a section of the webpage which can be placed antwhere on the screen by ones own wish.
+
+Styling using classes in css:    <!-- This is my doubt part ,so remember this****n -->
+Here we can actually make differnt changes to different paragraphs or any references or either to many links at a time by using the class attribute in the css .
+Just make a note that do not use the period while entering the class name in the body of your xhtml code.
+SYNTAX :
+inside the style tags
+.any_name {The properties to be changed ;}    <! -- just remember that here we have to use the period sign or the dot only inside the style tags --> 
+
+inside the body tags
+<tag_name class="any_name">The piece of the text</tag_name>    <!-- here don't even mistakenly add the period symbol inside the opening tag_name. -->
+
+This is gonna make the specific and desired tag line of the following properties as one wishes to add.
+
+
+So as we learnt earlier in this tutorial we have seen that there comes a div tag by which we can add many slots at various positions on our webpage as per our own need.
+But, then for sure arises a query that , how the hell our browser knows which div tag to go at once cause there might be many of them.There comes the id in the picture.
+SYNTAX :
+inside the style tags
+#any_name {The properties to be changed ;}    <! -- just remember that here we have to use the hash sign only inside the style tags --> 
+
+inside the body tags
+<tag_name class="any_name">The piece of the text</tag_name>    <!-- here don't even mistakenly add the hash symbol inside the opening tag_name. -->
+
+
+There's also a tag known as child , so you might be thinking that what the hell in the world this child means! So here is the answer.
+Child is nothing but a tag inside another tag.So let us suppose that we need to design the links but if we apply the style to  thae anchor tag 
+it will by default aplly the styling to each and every link in the html webpage.
+So to over come this we have something cool known as the child selectors.
+
+SYNTAX :
+Suppose we have a paragraph in which we are having some link and we need to design that link only , so we need to just write the below command in the style tags
+p > a {The properties to be changed for the link ;}
+
+We have something called as pseudo elements which we can use under the css.These are nothing similar to fake elements.
+so just don't be confused with the name as it goes as the pseudo element.These are the first letter of any paragraph on your damn webpage.
+SYNTAX :
+for paragraph;
+p:first-letter {The properties to be changed ;}
+
+
+Now the next topic is the External Style Sheet,this is kinda most umportant lesson in the css tutorial.
+These will for sure make you edit your webpage no matter how many of them you have got to edit even u can edit 1000's of pages at a single time.
+So for this we have got a special procedure:
+
+Step 1 : Very firstly go and open a new file in your text editor.
+Step 2 : now add all the tags with there styling properties without the style tag 
+         For instance:
+	 h1 {color:green;}
+
+	 p {font-family:Calibri;}
+
+ 	 a {color:orange;}
+Step 3 : Now save this file as anyname.css file
+Step 4 : <link rel="stylesheet" type="text/css" href="anyname.css"/>        <!-- this is the link to add all the css files in the html file -->
+Step 5 : The 4th step is to be copied in evry html files where the same kind off change is to be done.
+	 
+ 
+So here we are speaking about overriding styles in css:
+Now what does overriding means?? This might be the next question arising in your mind,So the answer to this that suppose u have some sort of 500 webpages and 
+you want al the pages to be same except for 1 page,so here comes into the picture the overriding style sheets.This means ,you can actually change the properties 
+of only one webpage among all oter webpages using this overriding style metod in css.
+
+So the procedure this overriding is pretty simple stuff ,we just have to mention the style tags again inside the hesd of that html page which we have to change
+and boooo....oom it gonna change the specific features of that page unless of the others.
+
+Since we have writing some extra style in the same style sheet we call this as an override as it adds an extra styling properties to that webpage. 
+
+
+
+
+#######Here we are now going to speak about positioning.When we have headers,paragraphs,links,images these all stuffs are always placed one after the another by default.
+So we have this cool stuff in css called as positioning.There are three types of positioning in css:
+1.) ABSOLUTE POSITIONING
+2.) RELATIVE POSITIONING
+3.) FIXED POSITIONING
+  
+
+	ABSOLUTE POSITIONING:
+		This is basically the type that makes you help to position all your stuffs as it is no matter what comes in the way.So it can also bump into things that conters each
+	other.
+
+	RELATIVE POSTIONING:
+		This basically positions the stuff from that location where it would be placed originally.It is lot more better than the absolute positioning.Though it overcomes the problem
+	with absolute positioning it still have the problem that it leaves a huge nasty gap in the original place where it was earlier placed.
+	
+	FIXED POSITIONING:
+		This is almost same hell as the absolute positioning,the only major difference in here is that whenever you scroll down your page you will still 
+	see the text which you fixed positioned on the screen. 
+
+
+These positioning are always used  inside the style tags in the head and the attribute is "position".
+
+INTODUCTION TO FORMS:
+There are sometimes a lot more necessity of forms on the webpage for login,data entry and many more stuffs.
+Here in htmll and css we have just  the creation for a form layout,but we need lot more than a layout to build forms.A lot of stuffs such as database to make th data store into them and many more.
+So here's a basic overview of forms in html and css.
+So the generalized syntax of forms go es as:
+SYNTAX :
+<form>
+
+ Username:<input type="text" name="username" size="10" maxlength="5" value="Enter the name here">  
+
+</form>
+
+Let us study the above syntax
+So here we can observe that the inside the form tags we have mentioned Username so its gonna be visible to the user.
+Now as we can also see the input tag it is a single attribute tag.there are although many different attribute for the input tag
+Next is type,so here since its the usename here the tye of the data which will be entered is of text type
+Next one's name it says username which is to be entered inside it
+Then we have size which reduces the length of the textbox
+maxlength limits the number of text which can be entered .it is the maximum limit of an username 
+value is another attribute taht ensures the user that what is neede to be mentioned in here
+
+
+Checkboxes and Radio buttons in css:
+Radio buttons are basically buttons on our webpage that make the user select among some options.
+Generalized Syntax of radio buttons in html is:
+SYNTAX :
+ value_name:<input type="radio" name="any property"  value="the name of the properties">
+
+NOTE : Generally this buttons are used make the selection among two options. 
+
+
+But at times there arises a condition where we need to select more than one option
+So here comes into the picture the cool stuff known as the checkboxes.These aloows the user to make more than one selection.
+SYNTAX :
+ value_name:<input type="checkbox" name="any property"  value="the name of the properties">
+
+NOTE : Mention that the property name inside the name attribute is same for many options in the same order of the checkboxes.
+
+
+Let us suppose we have to select hell lot of thing from the options available say, we need to select the country we live in,so here we cannot make them under checkboxes as it may make the webpage look clustered.
+
+So here we have the drop-down list:
+This requires wo different tags , the very first one is the select tag,it takes a single attribute called as the name like what do you want to add in the option.The other tag is the option tag which takes a single attribute called as the value to ensure each thing what is to be mentioned under that option.
+
+NOTE : Here the value attribute in the option tag takes different values as per the user.
+
+
+
+Text areas play some vital role in your webpage,suppose you are making a webpage for adding some description or asking for some feedback.There comes tis little brat!! the text areas ofcourse.So it is pretty simple to implement this.
+Generalized syntax is:
+ inside the form tags
+ <textarea name="feedback">
+ Type your feedback here...
+ </textarea>
+
+Now by default the browser takes a small area say of 2*2 ,hence to increase the area we have two attributes for the textarea tags
+The rows and cols attribute.
+SYNTAX :
+ inside the form tags
+ <textarea name="feedback" rows="8" cols="30">
+ Type your feedback here...
+ </textarea>
+
+NOTE : Here the name attribute in the textarea tagis for the user purpose.
+
+
+
+We sometimes need to provide some sort of security to our users like on the login page.So here we have got the password for this.
+SYNTAX :
+Password:<input type="password" name="pword">     <!-- this takes all the attributes same as the username-->
+
+
+Now supose we are asking someting to submit on our webpage like some docs or images we need to provide an upload button for the same.
+SYNTAX :
+<input type="file" name="shivam's file">
+This will just prompt up the windows file manager to select the files from your system.
+To submit the file we have to make the submit buttons.
+So the syntax for the submit buttons is:
+<input type="submit" value="SUBMIT">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  				*******************END OF CSS NOTES*********************
+
+
+JavaScript Notes:
+Javascript is a proper programming language that adds the features for client side validation,effects and events.
+Now what teh heck does these stuffs mean?So the answer is ,suppose you have created a form on your very own webpage which is a feedback form,so you might be expecting the details  of the user and their username password ,now these data after entering them the user may also want something to happen with that data .And here comes in the picture the Javascript programming.This adds the things which make the webpage to the user's side and client-friendly.
+
+
+Now there might arise another question that the forms and all on the webpage are designed and styled using html and css languages,so how come javascript will interact with these markup languages?So here is a concept called as the "Document Object Model".
+
+Like wise in html we have css which can be used inside the html document the javascript can also be used in the html document itself.Also we can have another file for javascript with an extension of .js and we can later on include that file in our own html webpage .To use both of these methods we have the script tag inside the head of the html document.
+The basic Syntax of a javascript code is as same as the html code:
+SYNTAX :
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+Inside the script tags we have many attributes .
+So let us start with the most basic and conventional program to print the hello world on our webpage:
+CODE :
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	document.write("Hello World");
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
+This will be printing the Hello Wold on the webpage.We can also print entire html tags inside our javascript code.The script tag can be placed anywhere on our html document,it is not necessary to place them inside the head tags.So here we have seen the write() method to print something on the webpage screen.
+SYNTAX :
+To print something we have an attribute ;
+ document.write();
+
+Now to print the result of some calculations we need to print with the statement in the document.write() attribute.
+SYNTAX :
+ document.write("The total is "+total);
+
+We can also print the text on new line by writing them inside any tag in html.
+SYNTAX :
+ document.write("<h2>The total is "+total+"</h2>); 
+
+This is writtenas an embedded code within the html document.We can also write the javascript code within another file and save that file with a .js extension.and we can include the external javascript file inside the html file within the script tags.
+SYNTAX :
+<script src="file_name.js">   
+
+NOTE: The javascript file should be saved in the same folder where the html is saved.
+
+We can also need to mention some comments at relevant places just for our further understanding,So the comments can be added by using two forward slashes and then typing the text. We can also add multi-line comment by placing a forward slash followed by an asterisk(*).
+
+We have Variables as well as Data types in javascript as it is a programing language.
+
+Variables are the names alloted to the primary memory of the system,i.e; RAM (Random Accesible Memory).
+
+Like we have the variables in javascript language we also have the concept of the data types.As we all know that that the data types are the types of data that are stored inside the variable.
+Now there are various types of data:
+1.) Primitive Data types  -  Numbers, String, Boolean 
+2.) Trivial/other Data types (Just another name for Primitive Data type)  -  null, undefined 
+3.) Composite Data types  -  Objects, Arrays
+
+
+So basically we need to understand that Javascript is an loosely typed and Dynamically typed programming language .
+Now a Question might arise that what the heck this loosely and dynamically means here.
+To answer this question let us declare a variable in javascript;
+SYNATX :
+var variable_name = value;
+
+So here in the above syntax we can observe that each time we declare a variable we do not need to mention the type of data which is going to be stored in the variable.This is what LOOSELY mean.
+
+Also depending upon the value stored in the variable the data type of that variable changes implicitly, so here is the meaning for the word DYNAMICALLY.
+Likely in any otehr programing language we can define a variable with two different ways;
+Initialization while declaration and defining teh variable name and then later initialising a value in it.
+
+There are certain rule that are neededto be followed while declaring an variable:
+The name which we give to the variable are known as the "Identifiers".So identifiers have certain rules to be declared.
+We have to know that the identifiers are case sensitive.Also we can only mention the identifier name with alphabet(either capital or small),digits or an underscore or dollar sign for the subsequent letters in the name.But the first letter should be an Alphabet,Underscore or dollar sign only. Also we have to note that the name should not be any pre-defined function or it may give you an error while running.
+
+
+JavaScript operators are symbols which are used to assign values, compare values, perform arithmetic operations, and more. 
+
+The variables (operations) are called operands.
+The operation (to be performed between the two operands) is defined by an operator.
+
+JavaScript supports the following types of operators:
+
+1.)Arithmetic Operators
+2.)Comparison Operators
+3.)Logical (or Relational) Operators
+4.)Assignment Operators
+5.)Conditional (or ternary) Operators
+6.)String Operators
+7.)Type Operators
+8.)Bitwise Operators
+JavaScript Arithmetic Operators –
+Arithmetic operators perform arithmetic operations on numbers.
+
+Operator	Description
++	        Addition
+–		Subtraction
+*		Multiplication
+/		Division
+%		Modulus (Remainder)
+++		Increment
+—		Decrement
+
+
+We have control statements in javascript.So basically control statements are nothing but the control for each statement under the javascript code.This control goes downwards in a linear approach.But in real world scenario's it is not that simpler.
+So there are two types of control statements:
+1.) Conditional control statements : if-else, switch case
+2.) Looping/Iterative control statements : for loop, while loop, do-while loop, for...in... loop
+Now there are two more statements are used as control statements but they do not come under any specific type of statements.
+The break and continue statements.
+
+If-else statements :
+SYNTAX :
+if(condition)
+{
+    statement 1;
+    .
+    .
+    .
+}
+else
+{
+    statement 1;
+    .
+    .
+    .
+}
+
+
+Nested if-else statements : 
+SYNTAX :
+if(condition)
+{
+    statement 1;
+    .
+    .
+    .
+    if(another condition)
+    {
+        statement 1;
+        .
+        .
+        .
+    }    
+}
+else
+{
+    statement 1;
+    .
+    .
+    .
+}
+
+
+Switch - case statements :
+This is more efficient in terms of run time as compared to if-else control statements.The switch-case used in javascript is a bit different than the switch-case used in any other programming language.Here in javascript we can pass numbers, strings, boolean values as cases to be checked.We can also add the string while defining the variable at the switch.
+
+For loop :
+Here there is a special note to be remembered for this loop is that it should be used when the total number of iterations are known.It is an entry controlled loop.
+SYNTAX :
+for(initialization ; condition ; increment/decrement)
+{
+	
+}
+
+While loop :
+This loop is used when you know that the iterations are true for certain number of times so that you can accordinglyincrement or decrement the counter variable.Likewise the for loop , the while loop is also entry controlled looping statement.
+SYNTAX :
+//variable declaration
+while(condition)
+{
+ statements ;
+ .
+ .
+ .
+ .
+ .
+ increment/decrement;
+} 
+
+Do-while loop :
+This is exit control looping statement.Here the control performs the task atleast one time and the condition is checked after the first iteration.So the task is performed atleast once in do-while loop.
+SYNTAX :
+//variable declatration
+do
+{
+ statements ;
+  .
+ .
+ .
+ .
+ .
+ increment/decrement;
+}while(condition);
+
+So now we are done with the looping statements,let's start with the most important topic in any programming language,the Functions.
+What are functions ?
+  Functions are piece or block of code that can be used as many times it is required in the program.Suppose we need to add two numbers and then we need to again add other two numbers after some statements in the same program, so we can define a function and call it whenever required in that code.A function in javascript is executed when something is going to invoke it.
+
+SYNTAX :
+function fun_name()    //this is function definition
+{
+ Statements ;
+}
+
+fun_name();     //this is a function call
+
+NOTE* : All the naming convention is same as naming a variable
+
+Now we are going to learn about the scope of variable in javascript i.e; Global or Local.
+
+Global variable : These are the variable which have there scope till the end of the function or simply until the execution of the whole program.This variable can be also used within any function. 
+
+Local variable : These are those variable which have there scope within the function itself,until the end of that module or even untill we call that function.
+
+
+The next topic we are going to learn in this tutorial is Arrays in Javascript :
+
+Arrays are a set of elements of same datatypes,but in javascript we can add elements of various datatypes in a same array.We can access a lot of elements at a single variable location.We can also iterate the arrays using loops in javascript.We may face certain scenario's in real world where we need to store huge amount of data and access them all at the same time so for that purpose we have the beautiful concept of arrays.
+SYNTAX :
+var variable_name = ["","",.......,""];
+
+The indexing of array elements is same as any other programming language.The first element is indexed as locatio 0 and so on it goes on incrementing.
+
+There is another way of creating arrays in javascript.
+var arr1 = new Array(values of the array);
+Here the new is the keyword which we need to make an array as "new Array".
+
+In javascript we have to perform certain operations on arrays.We have some methods and properties already defined in the array feature of javascript.
+Eg.: arr1.push("var_name");    <!-- this will add an extra value in the array -->
+
+Like them we have many more methods and properties in array in javascript.
+
+
+The next topic is the very interesting and most awaited topic in javascript programming language.That is the objects in Javascript.
+As we have seen earlier at the very beginning of the javascript tutorial that javascript is an object oriented programming language,i.e; it supports objects, inheritance and in the latest javascript it also supports classes.
+
+Now a question may arise in your mind that what is this object,so if you know about JAVA or C++ then you might be aware of objects.So objects are the collection of some properties of a particular thing.Here you can relate objects as the daily objects which we see around us.
+
+For instance :
+Lets us say we have cars of various models.Now we have to mention the specifications of the car such as model number, brand, autopilot, price so we can declare a variable car and for each of the above specs.Now suppose we have 100 different models of car so its like we can go crazy after copying and pasting the same set of variables and changing the model number from 1 to 100.So thw better way of doing this is by creating an object inside which we have all the properties of that object.So we can create all the required objects and their respective variables in the defined object.
+SYNTAX :
+var car = {
+	car_brand : "Tesla",
+	car_model : "Model 3",
+}  
+
+So in the above syntax we have created the variable car.The curly braces indicates that the variable declared  is an object and not a random variable.Unlike the random variables we have to put colons at the place of equal to.
+
+We can also add funcions inside the car object.Here the function is called as method.
+The syntax for declaring a method is :
+SYNTAX :
+var car = {
+	car_brand : "Tesla",
+	car_model : "Model 3",
+
+	method_name : function()
+	{
+	 return "The property to be printed"
+	 //return "<h2>This car has autopilot.</h2>"
+	}
+}  
+	car.method_name();         //this is also used to access the object
+We use the "dot(.)" operator to print and access the object properties.
+
+The above method to declare an object is the litral object declaration method.
+
+The another way of declaring the object is ;
+Now we are going to use the object constructor.
+So to create an object constructor we need the function() method.
+SYNTAX :
+function Cars(car_brand,car_model,price)
+{
+  this.car_brand = car_brand;
+  this.car_model = car_model;
+  this.price = price;
+}
+
+Here I have took car as an example your object may differ as per your programs requirements.
+
+The properties are inside the brackest of the function() method.
+this.car_brand is just the actual property of the car object.
+We can also create the functions within the object constructor.
+SYNTAX :
+function Cars(car_brand,car_model,price)
+{
+  this.car_brand = car_brand;
+  this.car_model = car_model;
+  this.price = price;
+  this.teslaAutoPilot = function()
+  {
+    document.write("<h2>This car has autopilot</h2>")
+  }
+}
+
+Now to make the new specifications for the object we need some variables.
+
+Say :
+var c1 = new Cars("Tesla", "Model 3", 35000$);
+Let us say we have to get the car model detail from our constructor we can access that by the dot(.) operator.
+Eg.; document.write("<h2>"+ c1.car_model);
+This will give me the output as :
+Model 3
+
+Now here in Javascript we can use Booleans, Strings, Numbers as objects.This is the special feature which is only allowed in javascript.
+Suppose we crete a variable str1 as;
+var str1 = new String();
+and now we try to print its type, so we have to write;
+document.write("<h2>typeof(str1)</h2>")
+
+NOTE : The typeof() method is used to get the type of the data that we are working with.
+
+So this is gonna return me the type of the variable as an object.This is because we have used the new keyword and "String()" method.Now this string method also have a lots of in-build methods which we can use to access the created object.
+Now let us say that we need to create a new property say fueltype inside our object (in this case it is Car):
+so, the syntax goes like :
+Car.fueltype = "Electric";
+We can also delete any property we just have to do this ;
+delete Car.price;
+This is gonna delete the car price from the Car object.
+
+
+Now we are going to start with the actual Javascript.
+So the next topic is DOM(Document Object Model) manipulations and we will also learn more about getelementbyId method in detail.So as we all know that HTML and CSS can't add manipulations that we need to add to the front side development.So, for that purpose we need to learn some backend server side scripting languages like ASP or PHP.
+These manipulations makes the website client side effective server friendly.
+We can use javascript to make our webpage static and functional on the frontend side.
+We can perform certain events by using javascript as basic frontend language.So, an event is nothing but the basic tasks such as clicking a button, scrolling down the page, etc.Suppose we have to add some basic type of event on a click over the button.So, we can go with a function inside the script tags in the head of the html document.Inside the function we have to add an 'alert' method which will read as "Button clicked".Now if we click on the button nothing is gonna happen.So, to make the alert appear on the webpage we need to call an attribute of the button tag, which is "onclick".Now we have to pass the function to the onclick attribute, and now if we click on the button we will see a prompt as "Button clicked".
+
+We have an element called as the getElementById(), this will return  the reference to the element by it's id.Suppose we have created an Id, and we want to access it by the button.So the getElementById() method will help us to do that;
+SYNTAX :
+function buttonClick()
+{
+ document.getElementById("id_name").innerHTML="piece of text"
+}
+Now after we run the code we will get the heading2 as "piece of text"
+We can access many manipulations by this method.
+
+NOTE : We have discussed about the id's in the HTML tutorials.Please refer that section in case you have forgotten.
+
+Now we are going to learn to take an input from the user in a textbox.
+We have "input" tags in HTML(refer the HTML section of this tutorial.)
+So we can take inputs from the user and add id's to them and access them in our functions;
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function fn1()
+            {
+                var x = document.getElementById("text1").value;
+                var y = document.getElementById("text2").value;
+              if(x == y)
+                  {
+                      alert("The username and password is same.");
+                  }
+              else
+                  {
+                      alert("The username and password does not matches.");
+                  }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input id="text1" placeholder="Username">
+        <br><br>
+        <input id="text2" type="password" placeholder="Password">
+        <br><br>
+        <button onclick="fn1()" id="btn1">Click me</button>
+        
+    </body>
+</html>
+
+So, this is how we can take input from user.
+
+Let us see how to take input through radiobuttons in Javascript :
+
+Now let us see this topic with an easy example :
+Suppose we want to create two radiobuttons of some youtube channel and want the user to select any one of them to vote and also want to display an alert on the webpage, so this can be done by this simple code.
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function fn1()
+            {
+                var rd1 = document.getElementById("rd1");
+                var rd2 = document.getElementById("rd2");
+              if(rd1.checked == true)			<!-- the "checked" attribute is used for radiobuttons and checkboxes to verified which of them is checked -->
+                  {
+                      alert("The channel selected is "+rd1.value);
+                  }
+              else
+                  {
+                      alert("The channel selected is "+rd2.value);
+                  }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input id="rd1" name="grp1" type="radio" value="Channel1">Channel1</input>  <!--in this input tag the value attribute is used which is accessed in the function-->
+        <br><br>
+        <input id="rd2" name="grp1" type="radio" value="Channel2">Channel2</input>
+        <br><br>
+        <button onclick="fn1()" id="btn1">Click me</button>
+        
+    </body>
+</html>
+
+Now we are going to learn to take input from a selectbox :
+We can access the element from a selectbox. Now selectbox is an element which helps the user to select an option from multiple options. To access the selectboxes using Javascript let us consider an example; suppose we have a selectbox of three youtube channels and we want to display an alert when we select any one of the channels among those three. So, this can be achieved by the following code ;
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function fn1()
+            {
+                var select = document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value);
+                
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <select id="selectbox">
+            <option value="Simple snippets">Simple snippets</option>
+             <option value="Telusko Learnings">Telusko Learnings </option>
+             <option value="MKBHD">MKBHD</option>
+        
+        </select>
+        <br><br>
+        <button onclick="fn1()" id="btn1">Click me</button>
+        
+        
+    </body>
+</html>
+
+In this above code we have used certain methods of the selectbox. The "options" method helps the user to select an option from the selectbox. The "selectedIndex" method helps the user to know which index element is been selected in order to display it on the alert message. And again the "value" method is used to get the value using the "getElementById" method. 
+This is how we can access the selectbox elements in javascript and make certain user friendly DOM manipulations for a better client-side website. 
+
+The next topic is how to get an element by tagname, by using the getElementsByTagName method. I know that the method name is quite big but trust me it is very simple access this method in Javascript.
+This method is used to change some styling on your webpage. Suppose you have many similar tags on your webpage and you want to access them all at a single time, so you can't just give them similar id's multiple time as it is not allowed in HTML. So, this getElementsByTagName method makes it more simple.What you have to do is just pass the tagname that you want to change, and there you go, you will have your changes applied.
+This method is quite helpful when we are accessing a lot of same tags on the webpage. The array style of accessing makes it more easy and dynamically faster to access.
+This can be illustrated by an example;
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function changeStyling()
+            {
+                var para = document.getElementsByTagName("p");
+                para[0].style.fontSize = 25;
+                para[1].style.color = "red";
+                para[2].style.fontWeight = "bold";
+                para[3].style.fontFamily = "arial";
+                para[4].style.fontStyle = "italic";
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p>This is paragraph 3</p>
+        <p>This is paragraph 4</p>
+        <p>This is paragraph 5</p>
+    </body>
+    <br>
+    <button onclick="changeStyling()">Click me</button>
+</html>
+
+Here in the above code we can also use the for loop to make the changes as an array.
+
+Now we are going to learn about a new method in Javascript which is getElementsByClassName() method.
+The class here is a HTML class.
+This method help us to access an element in HTML by its class name. 
+We can understand this concept with the help of an example;
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function changeStyling()
+            {
+                var element = document.getElementsByClassName("mypara");
+                for(var x=0;x<element.length;x++)
+                    {
+                        element[x].style.color = "red";
+                    }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p class="mypara">This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p class="mypara">This is paragraph 3</p>
+        <p>This is paragraph 4</p>
+        <p class="mypara">This is paragraph 5</p>
+    </body>
+    <br>
+    <button onclick="changeStyling()">Click me</button>
+</html>
+
+NOTE : The methods "getElementsByTagName" and "getElementsByClassName" generates an array and access them according to the parameters passed to them like, in getElementsByTagName we have the tagname as the parameter and in getElementsByClassname we have the class as the parameter.
+
+
+Now we have to learn about two more events in Javascript, the "onmouseover" & "onmouseout" events. These are the events that changes the images on these specified actions as per their name.
+Now again let us take an example to illustrate these events and to understand them easily;
+I have two images on my desktop where I have the HTML document, one is the Instagram logo and the another is the facebook logo. So, I will be hovering over the Instagram logo and it will turn to Facebook logo, and when I will hover out it will turn back to Instagram logo.
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script>
+            function setNewImage()
+            {
+                document.getElementById("img1").src="facebook-logo.jpg";
+            }
+            function setOldImage()
+            {
+               document.getElementById("img1").src="instalogo.jpg";   
+            }
+        </script>
+    </head>
+    
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="instalogo.jpg"/>
+        
+    </body>
+    
+</html>
+
+Now let us learn more about Form Validations in Javascript;
+
+Let us consider an example to illustrate this topic;
+What we are going to do is we will be creating a form with Username and Password and add a submit button , so  whenever the user keeps this textboxes empty it will pop up an alert message that empty field is not accepted.  
+
+Here is the code for the same;
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function validate()
+            {
+                var username = document.getElementById("uname");
+                var password = document.getElementById("pass");
+                
+                if(username.value == "" || password.value == "")
+                    {
+                        alert("No blank values allowed");
+                        return false;
+                    }
+                else
+                {
+                    true;
+                    
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form onsubmit="return validate()" action="message.html">
+            <input id="uname" placeholder="Username" type="text"><br><br>
+            <input id="pass" placeholder="Password" type="password"><br><br>
+            <button  type="submit">Submit</button>
+        </form>
+    </body>
+    
+</html>
+
+Here we cannot add the onclick attribute in the buttons tag as we have to make the actions on click of the submit buttons only. Also the action attribute is used to direct the html to perform the required actions only. The return property of calling the function is helpful while you want to decide when and when to not perform the task assigned. Here we have to take the directory to the new page that shows "Welcome", so even though both the if as well as else statements are being running accordingly, the directory is directed to the new pade which reads "Welcome". In order to avoid this inconvenience, we have the return property while calling the function in the onsubmit attribute. 
+
+We will be now taking an introduction at Regular expressions in Javascript. 
+
+Now, you might be wondering that what are "Regular expression", so regular expressions are basically some text or pattern which is fixed as such for a convention being followed.
+For instance let us consider that Tanmay is an Employee at XYZ software Development Pvt. ltd., so there might be certain instance such as the employees of the organization needs to give an attendance and for that purpose they might have their own personal unique id's. So we can assume that the id's must be starting with some fixed pattern, let us say "E00- " is the Id start for developers, "E01- " is the Id start for the manager, and so on. So there we can observe that we have some sort of fixed patterns in the expression. 
+
+So this is where we need the Regular expressions. These are used to make certain pattern matching and search and replace on some fixed texts.
+
+
+There is a thing to note that regular expressions are always treated as objects as they have methods associated with them. Also regular expressions are always case sensitive.
+There is a specific syntax used to declare and check for regular expression.
+SYNTAX :
+var regx = /E00/;
+
+
+Inside the forward slash we have to mention the regular expression which we have to check for. To make the Regular expression case insensitive we just have to write "i"
+after the forward slash.
+For instance :
+var regx = /E00/i;
+
+Code :
+<html>
+    <head>
+        <title>practice.</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function validate()
+            {
+                var username = document.getElementById("uname").value;
+                var regx = /E00/;
+                if(regx.test(username))
+                    {
+                        alert("Valid Username");
+                    }
+                else
+                    {
+                        alert("Invalid Username");
+                        document.getElementById("lbluser").style.visibility = "visible";
+                    }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form>
+            <input id="uname" placeholder="Username" type="text">
+            <label id="lbluser" style="color: red; visibility: hidden">Invalid Username</label>
+            <br><br>
+            <button onclick="validate()" type="button">Submit</button>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
